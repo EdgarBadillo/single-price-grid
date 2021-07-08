@@ -11,7 +11,7 @@
 
 <div>
 	<h3> Mobile </h3>
-	<img height="545" width="375" src="https://github.com/AugustoRavazoli/single-price-grid/blob/main/screenshots/mobile.png">
+	<img src="https://github.com/AugustoRavazoli/single-price-grid/blob/main/screenshots/mobile.png">
 	<h3> Desktop </h3>
 	<img src="https://github.com/AugustoRavazoli/single-price-grid/blob/main/screenshots/desktop.png">
 </div>
