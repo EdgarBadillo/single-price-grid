@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root
+{
+	--primary: hsl(179, 62%, 43%);
+	--secondary: hsl(71, 73%, 54%);
+	--tertiary: hsl(204, 43%, 93%);
+	--quartenary: hsl(218, 22%, 67%);
+	font-family: Karla, sans-serif;
+	line-height: 1.65;
+}
+
+*
+{
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	width: 100vw;
+	height: 175vh;
+}
+
+.container
+{
+	background-color: var(--tertiary);
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 28% 28% 28%;
+	grid-template-columns: 85%;
+	justify-content: center;
+	align-content: center;
+}
+
+.section
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.section > *
+{
+	width: 85%;
+}
+
+/* section 1 */
+
+#section-apresentation
+{
+	border-radius: 8px 8px 0 0;
+	background-color: white;
+}
+
+#section-apresentation-tittle
+{
+	color: var(--primary);
+	font-size: 1.35rem;
+}
+
+#section-apresentation-first-paragraph
+{
+	color: var(--secondary);
+}
+
+#section-apresentation-second-paragraph
+{
+	color: grey;
+}
+
+/* section 2 */
+
+#section-promotion
+{
+	background-color: var(--primary);
+	color: white;
+}
+
+#section-promotion-tittle
+{
+	font-size: 1.15rem;
+}
+
+#section-promotion-first-paragraph 
+{
+	display: flex;
+	align-items: center;
+}
+
+#price
+{
+	margin-right: 1rem;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+#per-month
+{
+	font-weight: normal;
+	font-size: 0.95rem;
+}
+
+#button-sign-up
+{
+	height: 20%;
+	background-color: var(--secondary);
+	color: white;
+	font-size: 1.15rem;
+	border-radius: 8px;
+	border: none;
+}
+
+/* section 3 */
+
+#section-about
+{
+	border-radius: 0 0 8px 8px;
+	background-color: var(--primary);
+	color: white;
+	opacity: 0.8;
+}
+
+#section-about-tittle
+{
+	font-size: 1.15rem;
+}
+
+#section-about-paragraph
+{
+	color: hsl(0, 0, 90%);
+}
+
+@media only screen and (min-width: 1024px)
+{
+	body
+	{
+		height: 100vh;
+	}
+
+	.container
+	{
+		grid-template-rows: 40% 40%;
+		grid-template-columns: 25% 25%;
+		grid-template-areas: "section-apresentation section-apresentation"
+							 "section-promotion section-about"
+	}
+	
+	#section-apresentation
+	{
+		grid-area: section-apresentation;
+	}
+	
+	#section-apresentation-tittle
+	{
+		margin-top: 2rem;
+	}
+		
+	#section-apresentation-first-paragraph
+	{
+		margin-top: 1.25rem
+	}
+	
+	#section-apresentation-second-paragraph
+	{
+		margin-bottom: 2.75rem;
+	}
+
+	#section-promotion
+	{
+		line-height: 1.65;
+		grid-area: section-promotion;	
+		border-radius: 0 0 0 8px;
+	}
+
+	#section-promotion-tittle
+	{
+		margin-top: 1rem;
+	}
+
+	#section-promotion > *
+	{
+		width: 70%;
+	}
+
+	#section-promotion-paragraphs
+	{
+		margin-bottom: 1rem;
+	}
+
+	#button-sign-up
+	{
+		margin-bottom: 1.5rem;
+	}
+
+	#section-about
+	{
+		line-height: 1.45;
+		grid-area: section-about;
+		border-radius: 0 0 8px 0;
+	}
+
+	#section-about > *
+	{
+		width: 70%;
+	}	
+	
+	#section-about-tittle
+	{
+		margin-top: 1rem;
+	}
+	
+	#section-about-paragraph
+	{
+		margin-bottom: 1.5rem;
+	}	
+	
+}
